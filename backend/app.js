@@ -16,7 +16,7 @@ app.get('/api/trails', (req, res) => {
     let result = await collection.find().toArray();
     console.log(result);
     res.send(result);
-
+    document.getElementById('content').innerText = JSON.stringify(result);
   });
 });
 app.use('/api', trailRouter);
@@ -56,8 +56,8 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Running on port ${port}`);
 });
-window.onload = () => {
-  console.log('Ready to go!');
+
+
   let submitForm = event =>{
       event.preventDefault();
       console.log('submit');
@@ -68,11 +68,11 @@ window.onload = () => {
       let city = document.getElementById('cityInput').value;
       let country = document.getElementById('countryInput').value;
       let feature = document.getElementById('featureInput').value;
+      
 
   let message = `Name: ${name}, length:${length}, description:${description}, city: ${city}, country: ${country}, feature:${feature}`;
-  
+  let form = document.getElementById('form').addEventListener('submit',submitForm);
   }
 
-  document.getElementById('form').addEventListener('submit',submitForm);
 
-}
+
