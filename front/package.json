@@ -1,11 +1,20 @@
 {
-  "name": "front",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "frontend of trail app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "app.js",
+  "dependencies": {
+    "http": "0.0.1-security",
+    "server": "^1.0.31"
   },
-  "author": "jeroen vermeiren",
-  "license": "ISC"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint",
+    "nodemon": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Jeroen Vermeiren",
+  "license": "ISC",
+  "description": "Trailsapp"
 }
