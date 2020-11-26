@@ -6,7 +6,7 @@ const mongo = require('./mongo');
 const app = express();
 const trailRouter = express.Router();
 // runs a server on port 3000 ex localhost:3000
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get('/api/trails', (req, res) => {
   mongo.open(async function (collection) {
