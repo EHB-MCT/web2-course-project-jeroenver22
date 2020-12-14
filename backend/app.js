@@ -1,22 +1,31 @@
 // gets express package from the node modules
 const express = require('express');
 const fs = require('fs');
-const mongo = require('./mongo');
+const mongo = require('mongo');
+const bodyParser = require('body-parser');
+const moongoose = require('moongoose');
 // call the function
 const app = express();
 const trailRouter = express.Router();
 // runs a server on port 3000 ex localhost:3000
 const port = process.env.PORT || 3000;
 
+
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+
 app.get('/api/trails', (req, res) => {
   mongo.open(async function (collection) {
     const query = {};
     // variable die het object terug geeft
+    // gaat in de collection database kijken
     // .map geeft array weer met alle resultaten van de database
     let result = await collection.find().toArray();
     console.log(result);
     res.send(result);
     document.getElementById('content').innerText = JSON.stringify(result);
+    console.log(collection);
+    return res.json(collection);
   });
 });
 app.use('/api', trailRouter);

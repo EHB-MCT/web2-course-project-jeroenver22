@@ -352,8 +352,40 @@ a:nth-of-type(6):before {
     height: 32vh;
   }
 }
+@media only screen and (max-width:360px){
+body{
+  zoom:30% ;
+}
+div#content{
+  height: 135vh;
+}
+div#content:nth-of-type(2) {
+  height: 155vh;
+}
+.centermore{
+  transform: translate(-400px, 65px);
+}
+footer{
+  height: 65vh;
+}
+}
+@media only screen and (min-width:600px){
+ 
+  div#content {
+    height: 95vh;
+}
+div#content:nth-of-type(2) {
+  height: 105vh;
+}
+.centermore {
+  transform: translate(-640px, 65px);
+}
+}
 
 @media only screen and (min-width: 1440px) {
+  body{
+    zoom: 1 !important;
+  }
   .centermore {
     transform: translate(-480px, 65px);
   }
@@ -371,6 +403,7 @@ a:nth-of-type(6):before {
   div#content:nth-of-type(2) {
     height: 80vh;
   }
+
 
 }
 

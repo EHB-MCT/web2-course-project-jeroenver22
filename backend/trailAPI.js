@@ -1,10 +1,9 @@
-const unirest = require("../node/node_modules/unirest");
+const unirest = require("unirest");
 
-const req = unirest("GET", "https://trailapi-trailapi.p.rapidapi.com/trails/explore/");
+var req = unirest("GET", "https://trailapi-trailapi.p.rapidapi.com/");
 // get parameters
 req.query({
-	"lat": "50.87178",
-	"lon": "4.17589"
+	"q-activities_activity_type_name_eq": "hiking"
 });
 // http headers via post
 req.headers({

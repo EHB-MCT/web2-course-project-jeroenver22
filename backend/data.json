@@ -48,5 +48,116 @@
         "features": "Fat biking allowed in winter, Night riding allowed",
         "rating": 0,
         "thumbnail": null
-    }
+    },
+    {  "city":"Adelaide",
+        "state":null,
+        "country":"Australia",
+        "name":"Mount Lofty",
+        "parent_id":null,
+        "unique_id":25908,
+        "directions":"This system has several trails with different trail-heads on the South East Free-way, or near Waterfall Gully. From the city drive along Glen Osmond Road or Green Hill Road. Depending on the trail, the drive is 10 to 20 km.",
+        "lat":-34.95096,
+        "lon":138.67247,
+        "description":null,
+        "date_created":null
+    
+        },
+        {
+        "city":"Fond Du Lac",
+        "state":"Wisconsin",
+        "country":"United States",
+        "name":"Wild Goose State Trail",
+        "parent_id":null,
+        "unique_id":19816,
+        "directions":"Fond du Lac: The northern trailhead is located at Rolling Meadows Drive. Parking is available. Restrooms are available at the Rolling Meadows Golf Course near the trail.",
+        "lat":43.650227,
+        "lon":-88.634643,
+        "description":"This 34-mile rail trail skirts the western edge of the vast Horicon Marsh from Fond du Lac to Clyman Junction. The Horicon Marsh, a National Wildlife Refuge and State Wildlife Area, home to over 250 bird species, is world-famous for its numerous migrant waterfowl and endless V-shaped formations of Canada geese. Wildflowers, woodlots, wildlife, prairie remnants and fertile farm fields are common sites along the trail.",
+        "date_created":null
+     
+        },
+        {
+        "city":"Patagonia",
+        "state":"Arizona",
+        "country":"United States",
+        "name":"San Rafael State Natural Area",
+        "parent_id":null,
+        "unique_id":14568,
+        "directions":"Stay on I-10 E from Tuscon and follow AZ 82 W onto Taylor Ave. Take a left onto Harshaw Rd, then a slight right onto Harshaw Creek Rd. Turn right again toward San Rafael Valley Rd for 2.7 miles to the park.",
+        "lat":31.372093,
+        "lon":-110.606236,
+        "description":"Park is currently NOT open to the public.",
+        "date_created":null
+   
+        },
+        {
+        "city":"Bayam",
+        "state":"Puerto Rico",
+        "country":"United States",
+        "name":"Monagas",
+        "parent_id":null,
+        "unique_id":4499,
+        "directions":"This single track / trail network is in the Santa Ana Forest in BayamÃ³n, Puerto Rico. These lands were once part of Fort Buchanan Military Base and where later on given to the local government. Better known as Julio E. Monagas Park."
+        ,"lat":18.40554,
+        "lon":-66.13781,
+        "description":null,
+        "date_created":null
+     
+        },
+        {
+        "city":"Durham",
+        "state":null,
+        "country":"North Carolina",
+        "name":"Quarry Trail (Dinosaur)",
+        "parent_id":null,
+        "unique_id":13850,
+        "directions":"Park at Rock Quarry park just off Stadium Blvd at the curve in the road near Durham Regional Hospital. From I-85, take Duke Street north and turn right onto Stadium drive. Parking area is less than 1/2 mile on the right."
+        ,"lat":0,
+        "lon":0,
+        "description":null,
+        "date_created":null
+      
+        },
+        {
+        "city":"Moab",
+        "state":"Utah",
+        "country":"United States",
+        "name":"Houdini",
+        "parent_id":null,
+        "unique_id":28342,
+        "directions":"UT",
+        "lat":0,
+        "lon":0,
+        "description":null,
+        "date_created":null
+
+        },
+        {
+        "city":"Hot Springs",
+        "state":"Arkansas",
+        "country":"United States",
+        "name":"Lake Ouachita",
+        "parent_id":null,
+        "unique_id":7864,
+        "directions":"From Hot Springs, AR, 13 miles, west on Highway 270 and north on Highway 227",
+        "lat":0,
+        "lon":0,
+        "description":null,
+        "date_created":null
+        },
+        {
+        "city":"Thredbo Village",
+        "state":"All",
+        "country":"Australia",
+        "name":"Golf Course Loop",
+        "parent_id":null,
+        "unique_id":4650,
+        "directions":"drive/ ride to the church in thredbo.",
+        "lat":-36.50557,
+        "lon":148.29628,
+        "description":null,
+        "date_created":null,
+        "children":[],
+        "activities":[]
+        }
 ]
