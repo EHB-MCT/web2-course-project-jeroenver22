@@ -1,14 +1,27 @@
+/*jhist esversion: 6*/
 // gets express package from the node modules
 const express = require('express');
 const fs = require('fs');
-const mongo = require('./mongo');
+/*const mongo = require('mongo');*/
+const mongoose = require('mongoose');
 // call the function
 const app = express();
 const trailRouter = express.Router();
+const db = mongoose.connect('mongodb://localhost/Trails', {useNewUrlParser: true});
+
 // runs a server on port 3000 ex localhost:3000
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
+const Rides = require('./models/trailsmodel');
 
 
+trailRouter.route('/trails').get((req, res) => {
+  Rides.find((err, trails) => {
+    if (err) {
+      return res.send(err);
+    }
+    return res.json(trails);
+  });
+});
 // listens to the route
 
 app.get('/api/trails', (req, res) => {
@@ -44,7 +57,7 @@ app.get('/api/fillDatabase', (req, res) => {
 app.get('/api/find', (req, res) => {
   mongo.open(async function (collection) {
     const query = {
-      id: Number(req.query.id)// data van query is altijd string maar in de data is id een nummer
+      id: Number(req.query.id) // data van query is altijd string maar in de data is id een nummer
     };
     // variable die het object terug geeft
     let search = await collection.findOne(query);
@@ -54,8 +67,6 @@ app.get('/api/find', (req, res) => {
 
   });
 });
-
-
 
 app.get('/', (req, res) => {
   res.send('Welcome to my TestAPI!');
