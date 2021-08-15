@@ -1,0 +1,33 @@
+{
+  "name": "web2-trailapi",
+  "version": "1.0.0",
+  "description": "trail api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeroenver22/trailapi.git"
+  },
+  "keywords": [
+    "trail",
+    "restapi",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Jeroen Vermeiren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeroenver22/trailapi/issues"
+  },
+  "homepage": "https://github.com/jeroenver22/trailapi#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12"
+  }
+}
