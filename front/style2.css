@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+}
+.navigation{
+  display: flex;
+}
+.navigation > h3{
+display: flex;
+width: 4vw;
+margin-left: 2vw;
+}
+.container {
+  height: 100vh;
+}
+.container img {
+  width: 100%;
+  position: absolute;
+  height: 110vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* img:hover{
+  transform:  scaleX(-1);
+  opacity: 0.3;
+  
+} */
+.main-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 6rem;
+  transform: translate(-50%, -30%);
+}
+#container{
+  position: relative;
+ 
+}
+.mid{
+  width: 563px;
+  height:336px;
+}
+.image{
+  display: block;
+  }
+.information{
+  background-image: url("./img/winter-4831013_1920.jpg");
+  background-size: cover;
+  background-position: fixed;
+  min-height: 500px;
+  font-size: 1.5rem;
+  transform: translateY(100vh);
+  z-index: 2;
+  position: relative;
+  height: 35vh;
+  text-align: center;
+}
+p.information{
+  transform: translateY(300%);
+  padding-top: 10%;
+}
+  .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 186, 155, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease-in-out;
+    
+  }
+  #container:hover .overlay{
+    height: 100%;
+  }
+
+.content {
+  width: 100%;
+  background: rgb(24, 24, 24);
+  min-height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+.content-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.text {
+  padding: 2rem 20rem;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.parallax{
+  background-attachment:scroll ;
+}
+a{
+  margin-left: 100px;
+}
+
+.form {
+  display: flex;
+  transform: translateY(500px);
+  flex-direction: column;
+  align-items: center;
+}
+
+button#btn {
+  width: 160px;
+  background-color: rgba(0, 186, 155, 0.5);
+  height: 50px;
+  margin-top: 20px;
+}
+
+#featureInput{
+  width: 200px;
+  height: 20px;
+  font-size: 1.2em;
+}

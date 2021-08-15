@@ -5,11 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "http": "^0.0.1-security",
-    "server": "^1.0.31"
+    "server": "^1.0.31",
+    "type": "module"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
